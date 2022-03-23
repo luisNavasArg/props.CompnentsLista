@@ -17,8 +17,10 @@ class App extends React.Component {
       history:[]
     })
   }
+  componentWillUnmount(){
+     alert('Hasta pronto!')
+  }
   agregar(i) {
-  
     console.log([...this.state.history, i])
     this.setState({
       history: [...this.state.history,i]
@@ -32,7 +34,7 @@ class App extends React.Component {
         <Boton value="violet" cambiar={this.agregar} />
         <Boton value="red" cambiar={this.agregar} />
         <Boton value="beige" cambiar={this.agregar} />
-        <Boton value="redOrange" cambiar={this.agregar} />
+        <Boton value="orange" cambiar={this.agregar} />
         <Lista lista={lista}/>
       </div>
     );

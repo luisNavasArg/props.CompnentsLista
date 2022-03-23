@@ -1,5 +1,5 @@
 function Boton(props) {
-   return (<button onClick={() => props.cambiar(props.value)}>
+   return (<button style={{backgroundColor:props.value}} onClick={() => props.cambiar(props.value)}>
      {props.value}
    </button>)
  }
